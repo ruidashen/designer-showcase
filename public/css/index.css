@@ -1,0 +1,102 @@
+/* dark theme */
+.dark .nav-item a,
+.dark  .logo {
+  color: black;
+} 
+
+
+.dark .logo-container a {
+  color: black;
+  text-decoration: none;
+}
+
+.dark .dropdown-content,
+.dark .dropdown-item:hover {
+  border-color: black;
+  background-color: black;
+}
+
+.dark .dropdown-content::before {
+  border-bottom-color: black;
+}
+
+.dark .dropdown-item {
+  color: white !important;
+}
+
+
+.carousel {
+  position: absolute !important;
+  top: 0;
+  z-index: -999;
+}
+
+.carousel-item {
+  height: 100vh;
+  width: 100vw;
+}
+
+.carousel-item div {
+  font-size: 0.8em;
+  color: #fff;
+  letter-spacing: 0.5em;
+  position: absolute;
+  left: 4em;
+  bottom: 4em;
+  padding: 1em;
+  background-color: black;
+}
+
+.carousel-item div .category {
+  color: #ccc;
+}
+
+
+/* buttons */
+.button {
+  line-height: 50px;
+  font-size: 40px;
+  display: block;
+  color: white;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  opacity: 0.3;
+  cursor: pointer;
+  z-index: 999;
+  user-select: none;
+}
+
+.prev {
+  left: 4%;
+}
+
+.next {
+  right: 4%;
+}
+
+/****** Footer ************/
+
+footer {
+  font-size: 0.8em;
+  position: fixed;
+  bottom: 4em;
+  left: 2em;
+  letter-spacing: 0.3em;
+}
+
+.description {
+  padding: 1em;
+  background-color: white;
+  color: #b2b2b2;
+}
+
+.black-theme {
+  background-color: black;
+}
+
+.black-theme > #project-name {
+  color: white;
+}

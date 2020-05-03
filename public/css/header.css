@@ -1,0 +1,76 @@
+/****** HEADER *****/
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo-container {
+  padding: 2rem;
+  color: #fff;
+}
+
+.logo-container a {
+  color: white;
+  text-decoration: none;
+}
+.navigation {
+  display: flex;
+  flex-direction: row;
+  color: #fff;
+  justify-content: space-between;
+  padding: 3rem 4rem 0 2rem;
+}
+
+.nav-item {
+  margin-left: 2rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+  position: relative;
+  color: white;
+}
+
+.nav-item a {
+  color: white;
+}
+
+.nav-item:hover {
+  text-decoration: underline;
+}
+
+.nav-item:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content {
+  font-size: 0.8rem;
+  background: white;
+  border: 1px solid white;
+  position: absolute;
+  transform: translateY(1rem);
+  padding: 0.5rem;
+  display: none;
+  z-index: 999;
+}
+
+.dropdown-content a {
+  color: black;
+}
+
+/* triangle */
+.dropdown-content::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-bottom: 10px solid white;
+  border-top: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-left: 10px solid transparent;
+  transform: translate(200%, -140%);
+}
+
+.dropdown-item:hover {
+  text-decoration: underline;
+  background-color: white;
+}

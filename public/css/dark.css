@@ -1,0 +1,22 @@
+.nav-item a,
+.logo {
+  color: black;
+}
+
+.logo-container a {
+  color: black;
+  text-decoration: none;
+}
+
+.dropdown-content,
+.dropdown-item:hover {
+  background-color: black;
+}
+
+.dropdown-content::before {
+  border-bottom-color: black;
+}
+
+.dropdown-item {
+  color: white !important;
+}
