@@ -6,5 +6,6 @@ nunjucks.configure("view", { autoescape: true, express: app });
 
 app.use(express.static("public"));
 app.use(router);
+app.set('port', (process.env.PORT) || 5000);
 
-app.listen(3000);
+app.listen(app.get('port'));
