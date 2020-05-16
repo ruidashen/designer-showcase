@@ -6,6 +6,7 @@ const { promisify } = require('util');
 
 const readDirAsync = promisify(fs.readdir);
 
+router.get('/favicon.ico', (req, res) => res.status(204).end());
 router.get("/:category", (req, res) => {
   let fileName = req.params.category;
   res.render(`${fileName}.html`);
