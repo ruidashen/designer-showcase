@@ -29,7 +29,6 @@ header {
   padding: 2rem;
 }
 
-
 .nav-item {
   margin-left: 2rem;
   font-size: 0.9rem;
@@ -84,8 +83,6 @@ header {
   background-color: white;
 }
 
-
-
 /* menu burger button */
 .burger {
   display: none;
@@ -101,8 +98,7 @@ header {
   margin-bottom: 5px;
 }
 
-
-@media screen and ( max-width: 1024px) {
+@media screen and (max-width: 1024px) {
   header {
     height: 8vh;
   }
@@ -115,10 +111,10 @@ header {
   .logo-container .logo {
     font-size: 2rem;
   }
-  
+
   .burger {
     display: block;
-    z-index: 2;
+    z-index: 999;
   }
 
   .navigation {
@@ -150,16 +146,14 @@ header {
     transform: none;
   }
 
-  .dropdown-content .dropdown-item{
+  .dropdown-content .dropdown-item {
     color: #000;
-    
   }
 
-    /* triangle */
+  /* triangle */
   .dropdown-content::before {
     border: none;
   }
-
 }
 
 .slide {
